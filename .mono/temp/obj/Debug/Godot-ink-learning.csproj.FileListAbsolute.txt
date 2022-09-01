@@ -1,0 +1,9 @@
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.csproj.AssemblyReference.cache
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.AssemblyInfoInputs.cache
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.AssemblyInfo.cs
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.csproj.CoreCompileInputs.cache
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/bin/Debug/Godot-ink-learning.dll
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/bin/Debug/Godot-ink-learning.pdb
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.GeneratedMSBuildEditorConfig.editorconfig
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.dll
+/home/alan/Documents/GameDev/godot-ink-learning/.mono/temp/obj/Debug/Godot-ink-learning.pdb
