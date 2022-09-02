@@ -1,0 +1,15 @@
+[remap]
+
+importer="ink"
+type="Resource"
+path="res://.import/crime_scene.ink.json-3e9c6b1fd0e14f8479052c475900d1e6.res"
+
+[deps]
+
+source_file="res://crime_scene.ink.json"
+dest_files=[ "res://.import/crime_scene.ink.json-3e9c6b1fd0e14f8479052c475900d1e6.res" ]
+
+[params]
+
+is_master_file=true
+compress=true

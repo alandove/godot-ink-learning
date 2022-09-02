@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Godot-ink-learning"
+run/main_scene="res://Printer.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
@@ -20,10 +21,6 @@ enabled=PoolStringArray( "res://addons/paulloz.ink/plugin.cfg" )
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
-
-[ink]
-
-inklecate_path="res://inklecate"
 
 [physics]
 

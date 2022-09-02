@@ -1,8 +1,0 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://addons/paulloz.ink/InkPlayer.cs" type="Script" id=1]
-[ext_resource path="res://crime_scene.ink" type="Resource" id=2]
-
-[node name="InkPlayer" type="Node"]
-script = ExtResource( 1 )
-story = ExtResource( 2 )

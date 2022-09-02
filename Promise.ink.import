@@ -1,0 +1,15 @@
+[remap]
+
+importer="ink"
+type="Resource"
+path="res://.import/Promise.ink-151ab32e26cfdc60ee03deb60a1a4ab0.res"
+
+[deps]
+
+source_file="res://Promise.ink"
+dest_files=[ "res://.import/Promise.ink-151ab32e26cfdc60ee03deb60a1a4ab0.res" ]
+
+[params]
+
+is_master_file=true
+compress=true
