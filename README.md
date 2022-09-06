@@ -8,7 +8,7 @@ version has the GDScript usage notes.
 In case that page evaporates, here are my snippets from it, and
 additional notes as I take another run at learning this setup.
 
-## Initial Setup
+## Initial setup
 
 Create a new Godot project.
 
@@ -44,16 +44,20 @@ Go to Project > Project Settings, choose the "General" tab, scroll
 all the way down to Ink, and set the Inklecate Path to point to the
 local copy of the executable.
 
-## Basic Usage
+## Basic usage
 
-In the Add Node menu, create an InkPlayer node.
+In the Add Node menu, create an InkPlayer node. You can rename it, but for these examples we'll continue calling it InkPlayer.
 
-## GDScript Usage Tips from the Scraper Page 
+## GDScript usage: loops
+
+This is adapted from the scraper page, which was mostly correct.
 
 To get text, call the `.Continue()` method:
 
 ```
-var story = get_node("Story")
+onready var story = $InkPlayer
+...
+
 while story.CanContinue:
     print(story.Continue())
     # Alternatively, text can be accessed from story.CurrentText
@@ -68,7 +72,9 @@ if story.HasChoices:
     story.ChooseChoiceIndex(index)
 ```
 
-A more Godot-like way of doing things is with signals:
+## GDScript usage: signals
+
+This is a more Godot-like way of doing things, but it requires inserting some pauses with a timer, as I've now done in the `TextTest.gd` script.
 
 ```
     ...
@@ -82,6 +88,8 @@ func _on_choices(currentChoices):
     for choice in choices:
         print(choice)
 ```
+
+Obviously in a real game, one would use something like a `Label` for text and `Button`s for choices, and set `label.text` and `button.text` to the outputs.
 
 To save and load from disk, use the `.SaveStateOnDisk` and
 `.LoadStateFromDisk` methods:

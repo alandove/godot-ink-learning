@@ -10,6 +10,7 @@ func display(choices) -> void:
 		button.text = choice
 		choice_index = choices.find(choice,0)
 		add_child(button)
+# warning-ignore:return_value_discarded
 		button.connect("pressed", self, "_on_Button_pressed", [choice_index])
 	(get_child(0) as Button).grab_focus()
 

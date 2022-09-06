@@ -32,7 +32,3 @@ margin_top = -141.0
 margin_right = 227.0
 margin_bottom = 101.0
 script = ExtResource( 4 )
-
-[connection signal="start_story" from="." to="." method="_on_start_story"]
-[connection signal="InkChoices" from="InkPlayer" to="." method="_on_choices"]
-[connection signal="InkContinued" from="InkPlayer" to="." method="_on_story_continued"]
