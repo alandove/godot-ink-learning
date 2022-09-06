@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/paulloz.ink/InkPlayer.cs" type="Script" id=1]
 [ext_resource path="res://TextTest.gd" type="Script" id=2]
 [ext_resource path="res://crime_scene.ink" type="Resource" id=3]
+[ext_resource path="res://ChoiceSelector.gd" type="Script" id=4]
 
 [node name="Printer" type="Node"]
 script = ExtResource( 2 )
@@ -19,16 +20,18 @@ margin_right = 960.0
 margin_bottom = 559.0
 text = "The Crime Scene"
 valign = 1
+autowrap = true
 
-[node name="Choicebox" type="Label" parent="."]
+[node name="ChoiceSelector" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -321.0
-margin_top = -196.0
-margin_right = 324.0
-margin_bottom = 7.0
+margin_left = -227.0
+margin_top = -141.0
+margin_right = 227.0
+margin_bottom = 101.0
+script = ExtResource( 4 )
 
 [connection signal="start_story" from="." to="." method="_on_start_story"]
 [connection signal="InkChoices" from="InkPlayer" to="." method="_on_choices"]

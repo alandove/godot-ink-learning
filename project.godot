@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "VBoxContainer",
+"class": "ChoiceSelector",
+"language": "GDScript",
+"path": "res://ChoiceSelector.gd"
+} ]
+_global_script_class_icons={
+"ChoiceSelector": ""
+}
+
 [application]
 
 config/name="Godot-ink-learning"
