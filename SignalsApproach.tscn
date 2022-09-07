@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/paulloz.ink/InkPlayer.cs" type="Script" id=1]
-[ext_resource path="res://TextTest.gd" type="Script" id=2]
+[ext_resource path="res://ChoiceSelector.gd" type="Script" id=2]
 [ext_resource path="res://crime_scene.ink" type="Resource" id=3]
-[ext_resource path="res://ChoiceSelector.gd" type="Script" id=4]
+[ext_resource path="res://TextTest.gd" type="Script" id=4]
 
 [node name="SignalsApproach" type="Node"]
-script = ExtResource( 2 )
+script = ExtResource( 4 )
 
 [node name="InkPlayer" type="Node" parent="."]
 script = ExtResource( 1 )
@@ -18,7 +18,7 @@ margin_left = 53.0
 margin_top = 377.0
 margin_right = 960.0
 margin_bottom = 559.0
-text = "The Crime Scene"
+text = "Story here."
 valign = 1
 autowrap = true
 
@@ -31,4 +31,4 @@ margin_left = -227.0
 margin_top = -141.0
 margin_right = 227.0
 margin_bottom = 101.0
-script = ExtResource( 4 )
+script = ExtResource( 2 )
