@@ -1,4 +1,6 @@
-class_name ChoiceSelector
+# I borrowed this script from the excellent GDQuest Visual Novel tutorial (in their 2D Secrets course).
+# These functions are now all in the TextTest.gd script, and I've disconnected this file from the ChoiceSelector node, which now functions as a simple VBoxContainer.
+# class_name ChoiceSelector
 extends VBoxContainer
 
 signal choice_made(target_id)

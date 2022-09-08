@@ -87,7 +87,7 @@ file.close
 
 ## Miscellany
 
-Get tags from `.CurrentTags`, `.GlobalTags`, and
+You can also get tags from `.CurrentTags`, `.GlobalTags`, and
 `.TagsForContentAtPath(String)`:
 
 ```
@@ -120,6 +120,8 @@ and observe them with signals if you like:
 func _foo_observer(varName, varValue):
     print(varName, " = ", varValue)
 ```
+
+**Note: Ink Lists do not work properly with GDScript in the current version of godot-ink; if your story uses Lists, you'll either need to write your script in C#, or move the logic you're using the Lists for into the Godot side of the project.**
 
 Read count for a knot/stitch is readable with
 `.VisitCountPathString(String)`:
