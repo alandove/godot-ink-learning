@@ -31,8 +31,21 @@ func _on_story_continued(text, tag_array) -> void:
 		print(tag)
 		if tag == "CLEAR":
 			output.text = ""
+		# Experimenting with ways to extract commands from tags and execute them.
+		if "test_function" in tag:
+			# Split the tag into an array of the space-separated words in it.
+			var command_array = tag.split(" ", true, 0)
+			# Call the first item in the array (i.e. the first word in the tag) as a function, 
+			# and send the entire tag an array of args to it.
+			self.call(command_array[0],command_array)
 	output.text += text
 	timer.start()
+
+# Test function for the commands extracted from the tags above.
+func test_function(args) -> void:
+	print("This is the test.")
+	for command in args:
+		print(command)
 
 func _on_choices(choices) -> void:
 	for choice in choices:
@@ -50,7 +63,7 @@ func _score_update(varName, varValue) -> void:
 	score.text = score_report
 	print(varName, " is now ", varValue)
 	
-func _on_Button_pressed(target_id: int) -> void:
+func _on_Button_pressed(target_id) -> void:
 	story.ChooseChoiceIndex(target_id)
 	for child in _choice_selector.get_children():
 		child.queue_free()

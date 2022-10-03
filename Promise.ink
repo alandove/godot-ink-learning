@@ -1,7 +1,8 @@
 VAR distrust = 0
 
 # theme: dark
-# BACKGROUND: RoverConceptResizeOilPainting.png
+# BACKGROUND: RoverConceptResizeOilPainting.png TagTest # Second tag same line
+# Another tag another line
 
 * Start
 -> prologue
@@ -9,6 +10,7 @@ VAR distrust = 0
 === prologue ===
 // Prologue
 # CLEAR
+# test_function Printing the arguments.
 
 Sydney,
 
